@@ -7,7 +7,10 @@ const Modal = props => {
 
 	useEffect(() => {
 		open();
-		// eslint-disable-next-line
+		return () => {
+			document.getElementById('root').classList.remove('fixed');
+		  };
+		  // eslint-disable-next-line
 	}, []);
 
 	const close = () => {
@@ -19,15 +22,6 @@ const Modal = props => {
 			modalContentRef.current.classList.add('remove');
 		}
 
-		setTimeout(() => {
-			if (typeof props.toggle == 'function') {
-				props.toggle({
-					show: false,
-					children: null,
-				});
-			}
-			document.getElementById('root').classList.remove('fixed');
-		}, 500);
 	};
 
 	const open = () => {

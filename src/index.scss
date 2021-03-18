@@ -22,6 +22,9 @@
 	.header {
 		background: #1f2640;
 		padding: 18px;
+		position: sticky;
+		top: 0;
+		z-index: 40;
 		.logo {
 			img {
 				max-width: 134px;

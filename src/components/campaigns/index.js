@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import { useStore } from '../../store/store';
 import 'react-datepicker/dist/react-datepicker.css';
 import './campaigns.scss';
@@ -35,8 +36,6 @@ const Campaigns = props => {
 		<ErrorBoundary>
 
 			<React.Fragment>
-				{modal.show ? <Modal {...modal} onClose={onClose} /> : null}
-
 				<div className='campaigns-container'>
 					<div className='campaigns-list-header'>
 						<div className='campaigns-list-item'>
@@ -205,6 +204,13 @@ const Campaigns = props => {
 						})}
 					</div>
 				</div>
+				{(() => {
+					return ReactDOM.createPortal(
+						modal.show ? <Modal {...modal} onClose={onClose} /> : null,
+						document.body
+					);
+					})()
+				}
 			</React.Fragment>
 
 		</ErrorBoundary>
