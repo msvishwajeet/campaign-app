@@ -169,6 +169,7 @@ const Campaigns = props => {
 													show: true,
 													children: (
 														<React.Fragment>
+														<h3 className='modal-header'>Schedule {name}</h3>
 														<DatePicker
 															selected={campaign.startAt}
 															open={true}

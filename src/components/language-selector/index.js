@@ -19,7 +19,10 @@ const LanguageSelector = props => {
 		dispatch({type:'SET_MODAL',
 		payload:{
 			show: true,
-			children: <div className='language-dropdown'>
+			children: <React.Fragment>
+			<h3 className='modal-header'>{language['SELECT_LANG']}</h3>
+			<div className='language-dropdown'>
+				
 				<ul className='language-list'>
 					<li className='language-list-item' onClick={()=>selectHandler('english')}>
 						{language['LANG_ENG']}
@@ -29,6 +32,7 @@ const LanguageSelector = props => {
 					</li>
 				</ul>
 			</div>
+			</React.Fragment>
 			}})
 	}
 	
