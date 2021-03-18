@@ -17,7 +17,7 @@ const Pricing = props => {
 					</div>
 				</div>
 				<div className='pricing-body'>
-					<div className='pricing-text'>{language['Pricing']}</div>
+					<div className='pricing-text'>{language['PRICING']}</div>
 					<div className='packages'>
 						{price.packages.map((p, idx) => {
 							return (

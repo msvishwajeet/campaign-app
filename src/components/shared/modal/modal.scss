@@ -38,11 +38,9 @@
 			transform: translate(0, 0);
 			background: #fff;
 			width: 100%;
-			height: 70%;
-			border-top-left-radius: 30px;
-			border-top-right-radius: 30px;
+			height: auto;
+			max-height: 70%;
 			animation: bottomUp 0.5s ease-out;
-			padding-top: 20px;
 
 			&.remove {
 				animation: bottomDown 0.5s ease-out;
@@ -54,13 +52,13 @@
 				height: 0;
 			}
 			to {
-				height: 70%;
+				height: auto;
 			}
 		}
 
 		@keyframes bottomDown {
 			from {
-				height: 70%;
+				height: auto;
 			}
 			to {
 				height: 0;

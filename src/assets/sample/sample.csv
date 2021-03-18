@@ -1,0 +1,9 @@
+Owner Name,Rent Per Month,Contract Start Date,Contract End Date,Address Line 1,City,State,Pincode
+"(Alphanumeric 100) 
+(Mandatory)","(Alphanumeric 100) 
+(Mandatory)","(Commercial/Residential)
+(Mandatory)","(Office , Retail , Storage , 
+Industrial and Parking Space) 
+(Mandatory)","(Self/Rented)
+(Mandatory)",,,,,"(char 100 Chars)
+(Mandatory)",(Mandatory),(Mandatory),(Optional)

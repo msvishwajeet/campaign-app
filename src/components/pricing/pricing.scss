@@ -107,11 +107,17 @@
 
 			.pricing-mob-btn {
 				position: absolute;
-				top: 5px;
-				right: 20px;
+				top: -47px;
+    			right: calc(50% + 20px);
 				.pricing-mob-icon {
 					font-family: none;
 					font-size: 36px;
+					width: 40px;
+					height: 40px;
+					position: fixed;
+					background: white;
+					text-align: center;
+					border-radius: 50%;
 				}
 			}
 		}

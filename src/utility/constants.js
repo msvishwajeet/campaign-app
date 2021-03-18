@@ -1,9 +1,9 @@
 import { random, randomDate } from './helpers';
 
 export const campaigns = {
-	'/upcoming-campaigns': 'Upcoming Campaigns',
-	'/live-campaigns': 'Live Campaigns',
-	'/past-campaigns': 'Past Campaigns',
+	'/upcoming-campaigns': 'UC_CAMP',
+	'/live-campaigns': 'LIVE_CAMP',
+	'/past-campaigns': 'PAST_CAMP',
 };
 
 export const campaignsData = [
@@ -17,15 +17,15 @@ export const campaignsData = [
 		price: {
 			packages: [
 				{
-					duration: '1 Week - 1 Month',
+					duration: 'ONE_WEEK_ONE_MONTH',
 					amount: '$ 100.00',
 				},
 				{
-					duration: '6 Months',
+					duration: 'SIX_MONTH',
 					amount: '$ 500.00',
 				},
 				{
-					duration: '1 Year',
+					duration: 'ONE_YEAR',
 					amount: '$ 900.00',
 				},
 			],
@@ -45,15 +45,15 @@ export const campaignsData = [
 		price: {
 			packages: [
 				{
-					duration: '1 Week - 1 Month',
+					duration: 'ONE_WEEK_ONE_MONTH',
 					amount: '$ 50.00',
 				},
 				{
-					duration: '6 Months',
+					duration: 'SIX_MONTH',
 					amount: '$ 100.00',
 				},
 				{
-					duration: '1 Year',
+					duration: 'ONE_YEAR',
 					amount: '$ 500.00',
 				},
 			],
@@ -73,15 +73,15 @@ export const campaignsData = [
 		price: {
 			packages: [
 				{
-					duration: '1 Week - 1 Month',
+					duration: 'ONE_WEEK_ONE_MONTH',
 					amount: '$ 100.00',
 				},
 				{
-					duration: '6 Months',
+					duration: 'SIX_MONTH',
 					amount: '$ 500.00',
 				},
 				{
-					duration: '1 Year',
+					duration: 'ONE_YEAR',
 					amount: '$ 900.00',
 				},
 			],
@@ -101,15 +101,15 @@ export const campaignsData = [
 		price: {
 			packages: [
 				{
-					duration: '1 Week - 1 Month',
+					duration: 'ONE_WEEK_ONE_MONTH',
 					amount: '$ 100.00',
 				},
 				{
-					duration: '6 Months',
+					duration: 'SIX_MONTH',
 					amount: '$ 500.00',
 				},
 				{
-					duration: '1 Year',
+					duration: 'ONE_YEAR',
 					amount: '$ 900.00',
 				},
 			],
@@ -129,15 +129,15 @@ export const campaignsData = [
 		price: {
 			packages: [
 				{
-					duration: '1 Week - 1 Month',
+					duration: 'ONE_WEEK_ONE_MONTH',
 					amount: '$ 100.00',
 				},
 				{
-					duration: '6 Months',
+					duration: 'SIX_MONTH',
 					amount: '$ 500.00',
 				},
 				{
-					duration: '1 Year',
+					duration: 'ONE_YEAR',
 					amount: '$ 900.00',
 				},
 			],
@@ -157,15 +157,15 @@ export const campaignsData = [
 		price: {
 			packages: [
 				{
-					duration: '1 Week - 1 Month',
+					duration: 'ONE_WEEK_ONE_MONTH',
 					amount: '$ 100.00',
 				},
 				{
-					duration: '6 Months',
+					duration: 'SIX_MONTH',
 					amount: '$ 500.00',
 				},
 				{
-					duration: '1 Year',
+					duration: 'ONE_YEAR',
 					amount: '$ 900.00',
 				},
 			],
@@ -185,15 +185,15 @@ export const campaignsData = [
 		price: {
 			packages: [
 				{
-					duration: '1 Week - 1 Month',
+					duration: 'ONE_WEEK_ONE_MONTH',
 					amount: '$ 100.00',
 				},
 				{
-					duration: '6 Months',
+					duration: 'SIX_MONTH',
 					amount: '$ 500.00',
 				},
 				{
-					duration: '1 Year',
+					duration: 'ONE_YEAR',
 					amount: '$ 900.00',
 				},
 			],
@@ -213,15 +213,15 @@ export const campaignsData = [
 		price: {
 			packages: [
 				{
-					duration: '1 Week - 1 Month',
+					duration: 'ONE_WEEK_ONE_MONTH',
 					amount: '$ 100.00',
 				},
 				{
-					duration: '6 Months',
+					duration: 'SIX_MONTH',
 					amount: '$ 500.00',
 				},
 				{
-					duration: '1 Year',
+					duration: 'ONE_YEAR',
 					amount: '$ 900.00',
 				},
 			],
@@ -241,15 +241,15 @@ export const campaignsData = [
 		price: {
 			packages: [
 				{
-					duration: '1 Week - 1 Month',
+					duration: 'ONE_WEEK_ONE_MONTH',
 					amount: '$ 100.00',
 				},
 				{
-					duration: '6 Months',
+					duration: 'SIX_MONTH',
 					amount: '$ 500.00',
 				},
 				{
-					duration: '1 Year',
+					duration: 'ONE_YEAR',
 					amount: '$ 900.00',
 				},
 			],
@@ -268,15 +268,15 @@ export const campaignsData = [
 		price: {
 			packages: [
 				{
-					duration: '1 Week - 1 Month',
+					duration: 'ONE_WEEK_ONE_MONTH',
 					amount: '$ 100.00',
 				},
 				{
-					duration: '6 Months',
+					duration: 'SIX_MONTH',
 					amount: '$ 500.00',
 				},
 				{
-					duration: '1 Year',
+					duration: 'ONE_YEAR',
 					amount: '$ 900.00',
 				},
 			],
@@ -296,15 +296,15 @@ export const campaignsData = [
 		price: {
 			packages: [
 				{
-					duration: '1 Week - 1 Month',
+					duration: 'ONE_WEEK_ONE_MONTH',
 					amount: '$ 20.00',
 				},
 				{
-					duration: '6 Months',
+					duration: 'SIX_MONTH',
 					amount: '$ 50.00',
 				},
 				{
-					duration: '1 Year',
+					duration: 'ONE_YEAR',
 					amount: '$ 100.00',
 				},
 			],
@@ -324,15 +324,15 @@ export const campaignsData = [
 		price: {
 			packages: [
 				{
-					duration: '1 Week - 1 Month',
+					duration: 'ONE_WEEK_ONE_MONTH',
 					amount: '$ 10.00',
 				},
 				{
-					duration: '6 Months',
+					duration: 'SIX_MONTH',
 					amount: '$ 30.00',
 				},
 				{
-					duration: '1 Year',
+					duration: 'ONE_YEAR',
 					amount: '$ 50.00',
 				},
 			],
@@ -352,15 +352,15 @@ export const campaignsData = [
 		price: {
 			packages: [
 				{
-					duration: '1 Week - 1 Month',
+					duration: 'ONE_WEEK_ONE_MONTH',
 					amount: '$ 100.00',
 				},
 				{
-					duration: '6 Months',
+					duration: 'SIX_MONTH',
 					amount: '$ 500.00',
 				},
 				{
-					duration: '1 Year',
+					duration: 'ONE_YEAR',
 					amount: '$ 900.00',
 				},
 			],
@@ -380,15 +380,15 @@ export const campaignsData = [
 		price: {
 			packages: [
 				{
-					duration: '1 Week - 1 Month',
+					duration: 'ONE_WEEK_ONE_MONTH',
 					amount: '$ 100.00',
 				},
 				{
-					duration: '6 Months',
+					duration: 'SIX_MONTH',
 					amount: '$ 500.00',
 				},
 				{
-					duration: '1 Year',
+					duration: 'ONE_YEAR',
 					amount: '$ 900.00',
 				},
 			],
@@ -408,15 +408,15 @@ export const campaignsData = [
 		price: {
 			packages: [
 				{
-					duration: '1 Week - 1 Month',
+					duration: 'ONE_WEEK_ONE_MONTH',
 					amount: '$ 100.00',
 				},
 				{
-					duration: '6 Months',
+					duration: 'SIX_MONTH',
 					amount: '$ 500.00',
 				},
 				{
-					duration: '1 Year',
+					duration: 'ONE_YEAR',
 					amount: '$ 900.00',
 				},
 			],
@@ -435,15 +435,15 @@ export const campaignsData = [
 		price: {
 			packages: [
 				{
-					duration: '1 Week - 1 Month',
+					duration: 'ONE_WEEK_ONE_MONTH',
 					amount: '$ 100.00',
 				},
 				{
-					duration: '6 Months',
+					duration: 'SIX_MONTH',
 					amount: '$ 500.00',
 				},
 				{
-					duration: '1 Year',
+					duration: 'ONE_YEAR',
 					amount: '$ 900.00',
 				},
 			],

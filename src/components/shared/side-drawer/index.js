@@ -1,13 +1,14 @@
 import React, { useEffect, useRef } from 'react';
-
+import { languages } from '../../../utility/languages';
 import './side-drawer.scss';
-
+import { useStore } from '../../../store/store';
 const SideDrawer = props => {
 	useEffect(() => {
 		setTimeout(() => {
 			openNav();
 		}, 0);
 	}, []);
+	const {globalState} = useStore();
 
 	const drawerRef = useRef(null);
 	const overlayRef = useRef(null);
@@ -38,6 +39,8 @@ const SideDrawer = props => {
 			closeNav();
 		}
 	}
+	const { languageType } = globalState;
+	const language = languages[languageType];
 
 	return (
 		<React.Fragment>
@@ -47,7 +50,7 @@ const SideDrawer = props => {
 				<div id='drawer' className='side-drawer' ref={drawerRef}>
 					<div className='closebtn'>&times;</div>
 					<div className='drawer-content'>
-						<div className='nav-header'>Manage Campaigns</div>
+						<div className='nav-header'>{language['MANAGE_CAMPAIGN']}</div>
 						<div className='nav-content'>{props.children}</div>
 					</div>
 				</div>

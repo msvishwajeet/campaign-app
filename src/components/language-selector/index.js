@@ -1,44 +1,48 @@
-import React, { useState } from 'react';
-
+import React from 'react';
 import './language-selector.scss';
+import { languages } from '../../utility/languages';
 import multiLanguageImg from '../../assets/images/mul-language.jpg';
 
 const LanguageSelector = props => {
-	const [showLangDropdown, setShowLangDropdown] = useState(false);
+	const { dispatch, globalState } = props;
+	const { languageType } = globalState;
+	const language = languages[languageType];
 
-	const toggleDropdown = e => {
-		const { dispatch } = props;
-
-		setShowLangDropdown(!showLangDropdown);
-
-		if (e.target.id === 'german' || e.target.id === 'english') {
-			dispatch({type:'SET_LANGUAGE', payload:e.target.id});
-		}
-	};
+	const selectHandler = (lang) => {
+		dispatch({type:'SET_LANGUAGE', payload:lang});
+		dispatch({type:'SET_MODAL',payload:{
+			show: false,
+			children: null,
+		}})
+	}
+	const showLangSelect = () => {
+		dispatch({type:'SET_MODAL',
+		payload:{
+			show: true,
+			children: <div className='language-dropdown'>
+				<ul className='language-list'>
+					<li className='language-list-item' onClick={()=>selectHandler('english')}>
+						{language['LANG_ENG']}
+					</li>
+					<li className='language-list-item'  onClick={()=>selectHandler('german')}>
+						{language['LANG_GER']}
+					</li>
+				</ul>
+			</div>
+			}})
+	}
+	
 
 	return (
-		<div className='language-selector' onClick={toggleDropdown}>
+		<div className='language-selector' onClick={showLangSelect}>
 			<span className='selector'>
-				<span className='text desktop'>Select Language</span>
+				<span className='text desktop'>{language['SELECT_LANG']}</span>
 				<img
 					src={multiLanguageImg}
-					alt='select language'
+					alt={language['SELECT_LANG']}
 					className='image mobile'
 				/>
 			</span>
-
-			{showLangDropdown ? (
-				<div className='language-dropdown'>
-					<ul className='language-list'>
-						<li className='language-list-item' id='english'>
-							English
-						</li>
-						<li className='language-list-item' id='german'>
-							German
-						</li>
-					</ul>
-				</div>
-			) : null}
 		</div>
 	);
 };

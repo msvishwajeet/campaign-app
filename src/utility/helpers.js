@@ -138,10 +138,10 @@ export const formatDays = (startAt, endAt, language) => {
 	const days = Math.floor(diff / (1000 * 60 * 60 * 24));
 
 	if (startAt <= d && d <= endAt) {
-		return `ends on ${formatDate(endAt, language)}`;
+		return `${language['END_ON']} ${formatDate(endAt, language)}`;
 	}
 
 	return d < startAt
-		? `${days} ${language['days ahead']}`
-		: `${days} ${language['days ago']}`;
+		? `${days} ${language['DAY_AHEAD']}`
+		: `${days} ${language['DAY_AGO']}`;
 };

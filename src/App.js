@@ -9,9 +9,6 @@ import { languages } from './utility/languages';
 import { useStore } from './store/store';
 import Campaigns from './components/campaigns'
 
-// const Campaigns = React.lazy(() =>
-// 	import(/* webpackChunkName: "Campaigns" */ './components/campaigns')
-// );
 
 const App = props => {
 	const [showDrawer, setShowDrawer] = useState(false);
@@ -23,7 +20,6 @@ const App = props => {
 	}
 
 	useEffect(() => {
-		console.log(globalState);  
 	  },[globalState])
 	  const { languageType } = globalState;
 	  const language = languages[languageType];
@@ -85,20 +81,20 @@ const App = props => {
 				<section className='main-container'>
 					<div className='campaigns-header desktop'>
 						<div className='campaigns-header'>
-							{language['Manage Campaigns']}
+							{language['MANAGE_CAMPAIGN']}
 						</div>
-						<LanguageSelector context={globalState} dispatch={dispatch} />
+						<LanguageSelector globalState={globalState} dispatch={dispatch} />
 					
 					</div>
 					<div className='campaigns-header mobile'>
 						<div className='campaigns-header-text'>
 							{
-								campaigns[
+								language[campaigns[
 									props.history.location.pathname
-								]
+								]]
 							}
 						</div>
-						<LanguageSelector context={globalState} dispatch={dispatch} />
+						<LanguageSelector globalState={globalState} dispatch={dispatch} />
 					</div>
 
 	
