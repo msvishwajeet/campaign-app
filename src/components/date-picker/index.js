@@ -3,11 +3,11 @@ import React, { useState, useEffect } from 'react';
 import 'react-datepicker/dist/react-datepicker.css';
 import './date-picker.scss';
 import { useStore } from '../../store/store';
+import DatePicker from 'react-datepicker';
 
-
-const DatePicker = React.lazy(() =>
-	import(/* webpackChunkName: "react-datepicker" */ 'react-datepicker')
-);
+// const DatePicker = React.lazy(() =>
+// 	import(/* webpackChunkName: "react-datepicker" */ 'react-datepicker')
+// );
 
 const ReactDatePicker = props => {
 	const [showDatePicker, setShowDatePicker] = useState(false);
@@ -47,7 +47,7 @@ const ReactDatePicker = props => {
 					{props.children}
 				</div>
 
-				<React.Suspense fallback={<React.Fragment />}>
+				{/* <React.Suspense fallback={<React.Fragment />}> */}
 					<DatePicker
 						selected={startAt}
 						open={showDatePicker}
@@ -62,7 +62,7 @@ const ReactDatePicker = props => {
 							toggleDatePicker(false)
 						}
 					/>
-				</React.Suspense>
+				{/* </React.Suspense> */}
 			</React.Fragment>
 		
 		</React.Fragment>

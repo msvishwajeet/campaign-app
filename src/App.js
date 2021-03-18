@@ -7,10 +7,11 @@ import LanguageSelector from './components/language-selector';
 import { campaigns } from './utility/constants';
 import { languages } from './utility/languages';
 import { useStore } from './store/store';
+import Campaigns from './components/campaigns'
 
-const Campaigns = React.lazy(() =>
-	import(/* webpackChunkName: "Campaigns" */ './components/campaigns')
-);
+// const Campaigns = React.lazy(() =>
+// 	import(/* webpackChunkName: "Campaigns" */ './components/campaigns')
+// );
 
 const App = props => {
 	const [showDrawer, setShowDrawer] = useState(false);
@@ -127,13 +128,7 @@ const App = props => {
 								path='/*campaigns'
 								exact
 								component={() => (
-									<React.Suspense
-										fallback={
-											<React.Fragment />
-										}
-									>
-										<Campaigns {...props} />
-									</React.Suspense>
+									<Campaigns {...props} />
 								)}
 							/>
 
