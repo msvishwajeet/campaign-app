@@ -1,0 +1,127 @@
+.pricing {
+	.pricing-content {
+		padding: 20px;
+
+		.pricing-header {
+			display: flex;
+			align-items: flex-end;
+		}
+
+		.game-image {
+			margin-right: 20px;
+			img {
+				width: 137px;
+				height: 137px;
+			}
+		}
+
+		.game-info {
+			text-transform: uppercase;
+			.game-name {
+				font-style: normal;
+				font-weight: bold;
+				font-size: 16px;
+				line-height: 19px;
+				color: #2b416c;
+			}
+			.country {
+				font-style: normal;
+				font-weight: normal;
+				font-size: 14px;
+				line-height: 16px;
+				color: #9ca2b7;
+				margin-top: 14px;
+			}
+		}
+
+		.pricing-body {
+			.pricing-text {
+				font-style: normal;
+				font-weight: bold;
+				font-size: 24px;
+				line-height: 32px;
+				color: #2b416c;
+				margin-top: 30px;
+			}
+			.packages {
+				margin-top: 17px;
+				.package {
+					margin-bottom: 20px;
+					display: flex;
+					justify-content: space-between;
+					.duration {
+						font-style: normal;
+						font-weight: normal;
+						font-size: 16px;
+						line-height: 24px;
+						color: #7788a3;
+					}
+					.price {
+						font-style: normal;
+						font-weight: bold;
+						font-size: 16px;
+						line-height: 24px;
+						color: #556789;
+					}
+				}
+			}
+		}
+
+		.pricing-footer {
+			display: flex;
+			justify-content: center;
+			.pricing-footer-btn {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				border: 2px solid #181b34;
+				padding: 12px 18px;
+				height: 48px;
+				cursor: pointer;
+				&:hover {
+					background: #181b34;
+					.pricing-footer-text {
+						color: #fff;
+					}
+				}
+			}
+
+			.pricing-footer-text {
+				font-style: normal;
+				font-weight: bold;
+				font-size: 16px;
+				line-height: 19px;
+				text-align: center;
+				color: #181b34;
+			}
+		}
+	}
+
+	@media only screen and (max-width: 600px) {
+		.pricing-content {
+			padding-top: 40px;
+			.pricing-footer {
+				display: none;
+			}
+
+			.pricing-mob-btn {
+				position: absolute;
+				top: 5px;
+				right: 20px;
+				.pricing-mob-icon {
+					font-family: none;
+					font-size: 36px;
+				}
+			}
+		}
+	}
+
+	@media only screen and (min-width: 601px) {
+		.pricing-content {
+			.pricing-mob-btn {
+				display: none;
+			}
+		}
+	}
+}

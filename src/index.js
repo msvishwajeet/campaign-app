@@ -1,12 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
+import { BrowserRouter as Router , HashRouter} from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
+import { GlobalStateProvider } from './store/store';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <HashRouter>
+      <GlobalStateProvider>
+        <App />
+      </GlobalStateProvider>
+    </HashRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
